@@ -26,20 +26,6 @@
         <source-file src="src/android/IonicKeyboard.java" target-dir="src/io/ionic/keyboard" />
     </platform>
 
-    <!-- ios -->
-    <platform name="ios">
-        <js-module src="www/ios/keyboard.js" name="keyboard">
-            <clobbers target="cordova.plugins.Keyboard" />
-        </js-module>
-        <config-file target="config.xml" parent="/*">
-            <feature name="Keyboard">
-                <param name="ios-package" value="IonicKeyboard" onload="true" />
-            </feature>
-        </config-file>
-        <header-file src="src/ios/IonicKeyboard.h" />
-        <source-file src="src/ios/IonicKeyboard.m" />
-    </platform>
-
 	<!-- browser -->
     <platform name="browser">
         <js-module src="www/browser/keyboard.js" name="keyboard">
